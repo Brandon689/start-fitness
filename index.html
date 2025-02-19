@@ -1,169 +1,362 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- header / hero -->
-        <!-- You want to use very few words, a clear call to action (CTA), and an image that portrays your product or of a person enjoying your product. -->
-        <div class="">
-            <header class="header lg">
-                <div class="header-contacts">
-                    <div class="phone">430 440 960</div>
-                    <div class="x">Schedule Online</div>
-                </div>
-                <div class="site-header">
-                    <div>
-                        <img src="./star.png" width="120"/>
-                    </div>
-                    <ul class="site-menu">
-                        <li>Transform Your Body Today</li>
-                        <li>Start Your Free Trial</li>
-                        <li>Write a Review</li>
-                    </ul>
-                </div>
-            </header>
-            <section class="container lg xx">
-                <div class="hero-columns">
-                    <div class="hero-column hero-col1">
-                        <h1 class="site-title">Start Fitness Helps You <span style="color: red">Transform</span> Your Health</h1>
-                        <div class="site-tagline">Join our proven 8-week transformation program and start the new you. Our expert coaches provide all the motivation and knowledge you need to win. Live a healthier, better life today.</div>
-                        <div class="hero-cta">Claim Your Free Session</div>
-                    </div>
-                    <div class="hero-column">
-                        <img class="poy" src="1.jpg"/>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- 3 value proposition -->
-        <!-- The next section of your website should communicate the value your products or service can deliver to a customer. -->
-        <section class="three lg">
-            <div class="pi">
-                <img src="kettlebell-red.png" width="50"/>
-                <div class="z">Convenience</div>
-                <div class="zx">We come to you—train at your favorite outdoor spot, home, or a local gym.</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Fitness - Transform Your Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'alegreya': ['"Alegreya Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top Contact Bar -->
+            <div class="flex justify-end items-center py-2 space-x-6">
+                <span class="text-lg font-medium">430 440 960</span>
+                <button class="bg-red-600 text-white px-6 py-2 uppercase font-bold hover:bg-red-700 transition">
+                    Schedule Online
+                </button>
             </div>
-            <div class="pi">
-                <img src="training-red.png" width="50"/>
-                <div class="z">Personalized Plans</div>
-                <div class="zx">Tailored workouts designed for YOUR fitness level and goals.</div>
-            </div>
-            <div class="pi">
-                <img src="music-player-red.png" width="50"/>
-                <div class="z">Expert Guidance</div>
-                <div class="zx">Certified trainers who motivate, educate, and keep you accountable.</div>
-            </div>
-        </section>
-
-        <div class="c">
-            <div class="bgbg"></div>
-<!-- Negative stakes -->
-        <!-- The next section of your website should paint the negative stakes. What is life going to look like if the customer doesn't buy your product or service? What negative experiences are you saving customers from? -->
-        <div>
-            <section class="lg">
             
-                <h3 class="subber">Tired of Struggling to Stay Consistent with Your Fitness Goals?</h3>
-    
-                <div class="dok">
-                    <ul class="okx">
-                        <li>Are you overwhelmed by crowded gyms and intimidating equipment?</li>
-                        <li>Do you struggle to find time to work out with your busy schedule?</li>
-                        <li>Are you unsure where to start or how to stay motivated?</li>
-                    </ul>
-                    <p class="okk">
-                        At Start Fitness, we get it. Life is hectic, and staying fit shouldn't feel like another chore. That's why we bring personalized training to YOU—no excuses, no barriers.
-                    </p>
-                </div>
-    
-            </section>
-        </div>
-
-        <!-- guide -->
-        <!-- The next section of your website should position you as a trusted Guide by displaying both authority and empathy. Authority: Include testimonials, logos of businesses you've served, 
-        the number of people you've served, how long you've been in business, etc. Empathy: Include a statement that shows you understand your customer's pain. -->
-        <section class="lg sece">
-            <div class="sec-he">
-                <h3>Here to Guide You Every Step of the Way</h3>
-            <p>At Start Fitness, we've helped hundreds of Melburnians just like you transform their lives. We understand the challenges of staying fit in a busy world, and we're here to make it easier.</p>
-            </div>
-            <div class="k">
+            <!-- Main Navigation -->
+            <nav class="flex justify-between items-center py-4">
                 <div>
-                    <h4>Why Trust Us?</h4>
-                <ul>
-                    <li>5+ years of experience in personal training
-                    </li>
-                    <li>95% client satisfaction rate
-                    </li>
-                    <li>Certified trainers with a passion for helping you succeed</li>
+                    <img src="./star.png" alt="Start Fitness Logo" class="w-28"/>
+                </div>
+                <ul class="flex space-x-10 text-gray-600 font-medium uppercase">
+                    <li><a href="#" class="hover:text-red-600">Transform Your Body Today</a></li>
+                    <li><a href="#" class="hover:text-red-600">Start Your Free Trial</a></li>
+                    <li><a href="#" class="hover:text-red-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-red-600">Write a Review</a></li>
                 </ul>
-                </div>
-                <p>"I used to dread going to the gym, but Start Fitness changed everything. My trainer comes to my local park, and I've never felt stronger or more motivated!" – Sarah, Melbourne</p>
-            </div>
-        </section>
-
-        <!-- plan -->
-         <!-- The next section of your website should show customers that working with you or buying your product is easy and effortless. -->
-        <section class="lg sece">
-            <div class="">
-                <h4 class="subber">Get Started in Three Easy Steps</h4>
-
-                <div>
-                    <div class="reagan">
-                        <div class="fuc">1</div>
-                        <div>
-                            <div class="ctor">Book Your Free Consultation</div>
-                            <div>Tell us your goals, and we'll create a plan just for you.</div>
-                        </div>
-                    </div>
-                    <div class="reagan">
-                        <div class="fuc">2</div>
-                        <div>
-                            <div class="ctor">Start Training</div>
-                            <div>We'll meet you at your preferred location—home, park, or gym.</div>
-                        </div>
-                    </div>
-                    <div class="reagan">
-                        <div class="fuc">3</div>
-                        <div>
-                            <div class="ctor">See Results</div>
-                            <div>Stay consistent, stay motivated, and watch your fitness transform!</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- explanatory paragraph -->
-        <!-- In the next section of your website, you want to include a long-form explanatory paragraph. This gives customers more details, helps them feel like they've done their due diligence, and also helps with SEO -->
-        <section class="lg sece">
-            <p>
-                We know that you want to be healthier, stronger, and more confident—without sacrificing your busy lifestyle. In order to do that, you need a fitness plan that's flexible, personalized, and fits seamlessly into your routine.
-                The problem is finding the time, motivation, and know-how to stay consistent, which makes you feel frustrated, overwhelmed, or stuck in a fitness rut.
-                <br>
-                At Start Fitness, we believe fitness should work for YOU, not the other way around. We understand how hard it can be to juggle work, family, and personal goals, which is why we bring the gym to you—whether it's at your local park, home, or a nearby gym. Here's how we do it:
-                We start with a free consultation to understand your goals, fitness level, and preferences.
-                We create a customized plan tailored to your needs, whether you're a beginner or a seasoned athlete.
-                We meet you where you are—literally—with flexible scheduling and locations across Melbourne.
-                <br>
-                So, you can finally achieve your fitness goals without the hassle of crowded gyms or rigid schedules. And in the meantime, you'll have a certified trainer by your side to keep you motivated, accountable, and on track. So you can stop feeling stuck or overwhelmed and instead start feeling stronger, healthier, and more confident every day.
-            </p>
-        </section>
+            </nav>
         </div>
+    </header>
 
-        <!-- lead generator -->
-        <!-- Another key section of your website is your lead generator (also called a lead magnet). A lead generator is a free resource you give away in exchange for a person's  email address. Why do you need a lead generator? So you can…
-        • Capture email addresses of potential customers
-        • Build a list of leads to send emails to
-        • Establish credibility by providing value -->
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex gap-12 items-center">
+            <div class="w-1/2">
+                <h1 class="font-alegreya text-5xl leading-[1.15]">
+                    Start Fitness Helps You 
+                    <span class="relative">
+                        Transform
+                        <svg class="absolute -bottom-[6px] w-full" viewBox="0 0 383 85">
+                            <path 
+                                d="M -20,72.27 c 47.87500000000001,-2.0075000000000074 95.75,-6.204999999999984 191.5,-8.030000000000001 c 95.75,-1.8250000000000028 145.54000000000002,0 191.5,0.730000000000004 c 9.192000000000007,0.1460000000000008 -7.277000000000044,2.0805000000000007 -7.660000000000025,2.1899999999999977" 
+                                vector-effect="non-scaling-stroke"
+                                stroke="currentColor"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                fill="none"
+                                class="text-red-600"
+                            />
+                        </svg>
+                        
+                    </span>
+                    Your Health
+                </h1>                
+                <p class="mt-4 text-lg text-gray-600">
+                    Join our proven 8-week transformation program and start the new you. Our expert coaches provide all the motivation and knowledge you need to win. Live a healthier, better life today.
+                </p>
+                <button class="mt-6 bg-red-600 text-white px-8 py-3 uppercase font-bold hover:bg-red-700 transition">
+                    Claim Your Free Session
+                </button>
+            </div>
+            <div class="w-1/2">
+                <img src="1.jpg" alt="Fitness Transformation" class="w-full rounded-lg shadow-lg"/>
+            </div>
+        </div>
+    </section>
 
-        <!-- Junk Drawer / footer -->
-         <!-- This is the bottom of your webpage where you can include all the other things people may need to find. -->
-        <footer>
-        </footer>
-    </body>
+    <!-- Value Propositions -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex justify-center items-center gap-4 lg:gap-8">
+            <!-- First Column -->
+            <div class="text-center max-w-[280px]">
+                <img src="kettlebell-red.png" alt="Convenience" class="w-12 mx-auto"/>
+                <h3 class="mt-4 uppercase font-bold">Convenience</h3>
+                <p class="mt-2 text-gray-600">We come to you—train at your favorite outdoor spot, home, or a local gym.</p>
+            </div>
+    
+            <!-- First Chevron -->
+            <div class="text-red-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </div>
+    
+            <!-- Second Column -->
+            <div class="text-center max-w-[280px]">
+                <img src="training-red.png" alt="Personalized Plans" class="w-12 mx-auto"/>
+                <h3 class="mt-4 uppercase font-bold">Personalized Plans</h3>
+                <p class="mt-2 text-gray-600">Tailored workouts designed for YOUR fitness level and goals.</p>
+            </div>
+    
+            <!-- Second Chevron -->
+            <div class="text-red-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </div>
+    
+            <!-- Third Column -->
+            <div class="text-center max-w-[280px]">
+                <img src="music-player-red.png" alt="Expert Guidance" class="w-12 mx-auto"/>
+                <h3 class="mt-4 uppercase font-bold">Expert Guidance</h3>
+                <p class="mt-2 text-gray-600">Certified trainers who motivate, educate, and keep you accountable.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Pain Points Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-alegreya font-semibold text-center mb-8">
+                Tired of Struggling to Stay Consistent with Your Fitness Goals?
+            </h3>
+            <div class="flex gap-20">
+                <ul class="space-y-4 text-lg max-w-xl">
+                    <li>Are you overwhelmed by crowded gyms and intimidating equipment?</li>
+                    <li>Do you struggle to find time to work out with your busy schedule?</li>
+                    <li>Are you unsure where to start or how to stay motivated?</li>
+                </ul>
+                <p class="max-w-xl text-lg">
+                    At Start Fitness, we get it. Life is hectic, and staying fit shouldn't feel like another chore. That's why we bring personalized training to YOU—no excuses, no barriers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-alegreya font-semibold mb-4">Here to Guide You Every Step of the Way</h3>
+            <p class="text-lg max-w-3xl mx-auto">At Start Fitness, we've helped hundreds of Melburnians just like you transform their lives. We understand the challenges of staying fit in a busy world, and we're here to make it easier.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <!-- Left Column -->
+            <!-- <div class="space-y-12"> -->
+            <div>
+                <!-- Why Trust Us Section -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h4 class="text-2xl font-semibold mb-6">Why Trust Us?</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h5 class="font-semibold mb-1">5+ Years Experience</h5>
+                                <p class="text-gray-600">Helping Melburnians achieve their fitness goals since 2019</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h5 class="font-semibold mb-1">95% Satisfaction Rate</h5>
+                                <p class="text-gray-600">Our clients consistently rate us 5 stars for our personalized approach</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h5 class="font-semibold mb-1">Certified Trainers</h5>
+                                <p class="text-gray-600">Expert team with recognized fitness certifications and ongoing education</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Additional Stats Section -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <div class="text-4xl font-bold text-green-500 mb-2">500+</div>
+                        <div class="text-gray-600">Happy Clients</div>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <div class="text-4xl font-bold text-green-500 mb-2">10k+</div>
+                        <div class="text-gray-600">Training Sessions</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Column -->
+            <!-- <div class="space-y-12"> -->
+            <div>
+                <!-- Main Testimonial -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <blockquote class="relative">
+                        <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-3 h-16 w-16 text-gray-200" fill="currentColor" viewBox="0 0 32 32">
+                            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+                        </svg>
+                        <p class="text-xl italic relative z-10 mb-8">I used to dread going to the gym, but Start Fitness changed everything. My trainer comes to my local park, and I've never felt stronger or more motivated!</p>
+                        <!-- <footer class="mt-4">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-12 w-12 rounded-full" src="/path-to-sarah-image.jpg" alt="Sarah">
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-lg font-semibold">Sarah Mitchell</div>
+                                    <div class="text-gray-600">Member since 2023</div>
+                                </div>
+                            </div>
+                        </footer> -->
+                    </blockquote>
+                </div>
+    
+                <!-- Image Section -->
+                <div class="relative h-80 rounded-lg overflow-hidden">
+                    <img 
+                        src="lawrence-wilcox-MCP9atiDcAk-unsplash.jpg" 
+                        alt="Outdoor training session in Melbourne" 
+                        class="object-cover w-full h-full"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+     <!-- Steps Section -->
+<!-- Steps Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-4xl font-alegreya font-semibold text-center mb-12">Getting Started is Easy</h2>
+    <div class="max-w-2xl mx-auto space-y-8">
+        <div class="flex items-start gap-12">
+            <div class="text-4xl font-bold text-red-600">1</div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Book Your Free Consultation</h3>
+                <p>Schedule a no-obligation consultation where we'll discuss your fitness goals, current lifestyle, and any challenges you're facing. Our expert trainers will listen carefully to understand your needs and create a personalized plan that fits your schedule.</p>
+            </div>
+        </div>
+        <div class="flex items-start gap-12">
+            <div class="text-4xl font-bold text-red-600">2</div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Start Training</h3>
+                <p>Begin your fitness journey with our flexible training options. Whether you prefer working out in your local park, the comfort of your home, or a nearby gym, we'll bring the equipment and expertise to you. Each session is tailored to your fitness level and designed to progressively challenge you.</p>
+            </div>
+        </div>
+        <div class="flex items-start gap-12">
+            <div class="text-4xl font-bold text-red-600">3</div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">See Results</h3>
+                <p>Watch as your body and mindset transform through consistent training and expert guidance. We'll track your progress, adjust your program as needed, and celebrate your achievements together. Our supportive approach ensures you stay motivated and accountable throughout your fitness journey.</p>
+            </div>
+        </div>
+        <div class="text-center pt-6">
+            <button class="bg-red-600 text-white px-8 py-3 uppercase font-bold hover:bg-red-700 transition">
+                Start Your Journey Today
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Explanatory Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex gap-12 items-start">
+            <!-- Left image column ~35-40% -->
+            <div class="w-[400px] flex-shrink-0">
+                <img 
+                    src="bruce-mars-HHXdPG_eTIQ-unsplash.jpg" 
+                    alt="Personal trainer helping client" 
+                    class="rounded-lg object-cover w-full aspect-[4/5]"
+                >
+            </div>
+    
+            <!-- Right content column, text constrained to ~680px -->
+            <div class="max-w-[680px]">
+                <!-- <h3 class="text-sm font-medium text-green-600 mb-3">OUR APPROACH</h3> -->
+                <h2 class="text-3xl font-alegreya font-semibold mb-4">Making Fitness Work for Your Lifestyle</h2>
+                <p class="text-lg mb-6">At Start Fitness, we've helped hundreds of Melburnians just like you transform their lives. We understand the challenges of staying fit in a busy world, and we're here to make it easier.</p>
+                <p class="text-gray-600">Whether you're just starting out or looking to take your fitness to the next level, our experienced trainers will create a personalized plan that fits your schedule and goals.</p>
+
+                <p class="mb-4 text-gray-600">
+                    We know that you want to be healthier, stronger, and more confident—without sacrificing your busy lifestyle. In order to do that, you need a fitness plan that's flexible, personalized, and fits seamlessly into your routine.
+                </p>
+                <p class="mb-4 text-gray-600">
+                    The problem is finding the time, motivation, and know-how to stay consistent, which makes you feel frustrated, overwhelmed, or stuck in a fitness rut.
+                </p>
+                <!-- <p class="mb-4 text-gray-600">
+                    At Start Fitness, we believe fitness should work for YOU, not the other way around. We understand how hard it can be to juggle work, family, and personal goals, which is why we bring the gym to you—whether it's at your local park, home, or a nearby gym.
+                </p> -->
+                <!-- <p class="mb-4 text-gray-600">
+                    So, you can finally achieve your fitness goals without the hassle of crowded gyms or rigid schedules. And in the meantime, you'll have a certified trainer by your side to keep you motivated, accountable, and on track. So you can stop feeling stuck or overwhelmed and instead start feeling stronger, healthier, and more confident every day.
+                </p> -->
+            </div>
+        </div>
+    </section>
+    <!-- Lead Generation Section -->
+<section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex gap-12 items-center">
+            <!-- Left Content -->
+            <div class="w-1/2">
+                <h2 class="text-3xl font-alegreya font-semibold mb-4">Get Your Free Fitness Success Blueprint</h2>
+                <p class="text-lg mb-6">Download our comprehensive guide to kickstart your fitness journey. Learn proven strategies that have helped hundreds of busy professionals transform their bodies.</p>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>8-Week Workout Plan for Beginners</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Quick & Healthy Recipe Guide</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Daily Motivation Tips & Tricks</span>
+                    </li>
+                </ul>
+
+                <!-- Lead Capture Form -->
+                <form class="space-y-4">
+                    <div class="flex gap-4">
+                        <input type="text" placeholder="First Name" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500">
+                        <input type="email" placeholder="Email Address" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-red-500">
+                    </div>
+                    <button class="w-full bg-red-600 text-white px-8 py-3 uppercase font-bold hover:bg-red-700 transition rounded-lg">
+                        Get Your Free Guide
+                    </button>
+                    <p class="text-sm text-gray-500 text-center">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-1/2">
+                <img src="ebook-mockup.jpg" alt="Fitness Success Blueprint" class="w-full rounded-lg shadow-xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <!-- Footer content here -->
+    </footer>
+</body>
 </html>
