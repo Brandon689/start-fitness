@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     class="absolute -bottom-[6px] w-full" 
+     viewBox="0 0 383 85" 
+     version="1.1"
+     preserveAspectRatio="xMidYMid meet">
+    <path d="M -20,72.27 c 47.87500000000001,-2.0075000000000074 95.75,-6.204999999999984 191.5,-8.030000000000001 c 95.75,-1.8250000000000028 145.54000000000002,0 191.5,0.730000000000004 c 9.192000000000007,0.1460000000000008 -7.277000000000044,2.0805000000000007 -7.660000000000025,2.1899999999999977" 
+          vector-effect="non-scaling-stroke" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          fill="none" 
+          class="text-red-600"/>
+</svg>
